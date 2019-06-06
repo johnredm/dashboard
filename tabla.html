@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no,
+    initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,600,700" rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
+    <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="dist/Chart.bundle.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+
+
+
+
+        var ganancias = [[1200,2000,3000,1200,1500,1555,1450,1260,1852,1780,1899,1544],
+        [1200,1100, 2032, 991, 892, 992, 1045, 1230, 2001, 1539, 2122, 1549],
+        [1300,1200, 2432, 1091, 2992, 1992, 2045, 1244, 2401, 1239, 1122, 1349],
+        [1400,1250, 2232, 2391, 22592, 2992, 1045, 1344, 1201, 1839, 1222, 1849],
+        [1420,900, 1232, 3091, 1292, 1292, 3445, 1844, 3401, 839, 2322, 1249],
+        [1410,1200, 1352, 3321, 1452, 1422, 1235, 1444, 2301, 1839, 1322, 349],
+        [1230,940, 1132, 1091, 1292, 2292, 3445, 1544, 3701, 4339, 1322, 249],
+        [1900,1400, 2532, 2991, 1892, 1992, 1245, 1230, 2041, 1599, 1122, 1349],
+        [1310,1200, 1352, 3221, 1452, 1432, 1235, 1444, 2301, 1859, 1322, 1349],
+        [2310,2300, 2352, 3221, 1542, 1832, 1535, 1544, 2101, 859, 122, 49],
+        [1760,1780, 1752, 3231, 1472, 1562, 1235, 1844, 3301, 1259, 1822, 1449]];
+
+        var anterior = null;
+
+        var fondos = [
+          "#1F78D1",
+          "#1F1FD1",
+          "#781FD1",
+          "#D11FD1",
+          "#D11F78",
+          "#D11F1F",
+          "#D0D020",
+          "#A4D11F",
+          "#4BD11F",
+          "#00BFFF",
+          "#FF0000",
+          "#00FF7F"
+        ];
+
+        var meses=  ["November",
+        "December",
+        "January",
+        "Febrary",
+        "March",
+        "April",
+        "May",
+        "June",
+        "July",
+        "August",
+        "September",
+        "October"];
+
+
+
+
+
+
+      });
+
+    </script>
+    <title>Home</title>
+  </head>
+  <body>
+    <div class="contenedor">
+      <div class="sideizq">
+        <div class="sup">
+          <div class="contenedor-logo">
+            <div class="logo">
+              <img src="img/logo.png" alt="logo">
+
+            </div>
+            <div class="texto">
+            </div>
+          </div>
+        </div>
+        <div class="med">
+          <div class="contenedor-menu">
+            <a class="iconoizq"><i class="fa fa-home"></i></a>
+            <a href="home.html" class="textizq">Home</a>
+            <a class="iconoizq"><i class="fa fa-bar-chart"></i></a>
+            <a href="metricas.html" class="textizq">Stats</a>
+            <a class="iconoizq"><i class="fa fa-table"></i></a>
+            <a href="tabla.html" class="textizq">table</a>
+
+          </div>
+
+        </div>
+        <section class="redes-sociales">
+  		  	<div class="contenedor-redes">
+    				<a class="twitter" href="http://www.twitter.com"><i class="fa fa-twitter"></i></a>
+    				<a class="facebook" href="http://www.facebook.com"><i class="fa fa-facebook"></i></a>
+    				<a class="youtube" href="http://www.youtube.com"><i class="fa fa-youtube-play"></i></a>
+    				<a class="github" href="http://www.github.com"><i class="fa fa-github"></i></a>
+    				<a class="instagram" href="http://www.instagram.com"><i class="fa fa-instagram"></i></a>
+	      	</div>
+      	</section>
+
+      </div>
+      <div class="main">
+
+        <div class="container">
+          <h1 class="titulo">Data Table</h1>
+          <div class="tabla">
+            <table>
+              <tr>
+                <th>Name</th>
+                <th>November</th>
+                <th>December</th>
+                <th>January</th>
+                <th>Febrary</th>
+                <th>March</th>
+                <th>April</th>
+                <th>May</th>
+                <th>June</th>
+                <th>July</th>
+                <th>August</th>
+                <th>September</th>
+                <th>October</th>
+
+              </tr>
+              <tr>
+                <th>Daniel</th>
+                <script type="text/javascript">
+                  var gan =[1200,2000,3000,1200,1500,1555,1450,1260,1852,1780,1899,1544];
+                  for (var i = 0; i < 12; i++) {
+                    document.write("<td>"+gan[i]+"</td>");
+                    }
+                </script>
+              </tr>
+              <tr>
+                <th>Sebastian</th>
+                <script type="text/javascript">
+                  var gan =  [1200,1100, 2032, 991, 892, 992, 1045, 1230, 2001, 1539, 2122, 1549];
+                  for (var i = 0; i < 12; i++) {
+                    document.write("<td>"+gan[i]+"</td>");
+                    }
+                </script>
+              </tr>
+              <tr>
+                <th>Karolina</th>
+                <script type="text/javascript">
+                  var gan =[1300,1200, 2432, 1091, 2992, 1992, 2045, 1244, 2401, 1239, 1122, 1349];
+                  for (var i = 0; i < 12; i++) {
+                    document.write("<td>"+gan[i]+"</td>");
+                    }
+                </script>
+              </tr>
+              <tr>
+                <th>Consuelo</th>
+                <script type="text/javascript">
+                  var gan =[1400,1250, 2232, 2391, 22592, 2992, 1045, 1344, 1201, 1839, 1222, 1849];
+                  for (var i = 0; i < 12; i++) {
+                    document.write("<td>"+gan[i]+"</td>");
+                    }
+                </script>
+              </tr>
+              <tr>
+                <th>Andres</th>
+                <script type="text/javascript">
+                  var gan =[1420,900, 1232, 3091, 1292, 1292, 3445, 1844, 3401, 839, 2322, 1249];
+                  for (var i = 0; i < 12; i++) {
+                    document.write("<td>"+gan[i]+"</td>");
+                    }
+                </script>
+              </tr>
+              <tr>
+                <th>David</th>
+                <script type="text/javascript">
+                  var gan =[1410,1200, 1352, 3321, 1452, 1422, 1235, 1444, 2301, 1839, 1322, 349];
+                  for (var i = 0; i < 12; i++) {
+                    document.write("<td>"+gan[i]+"</td>");
+                    }
+                </script>
+              </tr>
+              <tr>
+                <th>Juan</th>
+                <script type="text/javascript">
+                  var gan =  [1230,940, 1132, 1091, 1292, 2292, 3445, 1544, 3701, 4339, 1322, 249];
+                  for (var i = 0; i < 12; i++) {
+                    document.write("<td>"+gan[i]+"</td>");
+                    }
+                </script>
+              </tr>
+              <tr>
+                <th>Andrea</th>
+                <script type="text/javascript">
+                  var gan =  [1900,1400, 2532, 2991, 1892, 1992, 1245, 1230, 2041, 1599, 1122, 1349];
+                  for (var i = 0; i < 12; i++) {
+                    document.write("<td>"+gan[i]+"</td>");
+                    }
+                </script>
+              </tr>
+              <tr>
+                <th>Felipe</th>
+                <script type="text/javascript">
+                  var gan =[1310,1200, 1352, 3221, 1452, 1432, 1235, 1444, 2301, 1859, 1322, 1349];
+                  for (var i = 0; i < 12; i++) {
+                    document.write("<td>"+gan[i]+"</td>");
+                    }
+                </script>
+              </tr>
+              <tr>
+                <th>John</th>
+                <script type="text/javascript">
+                  var gan =[2310,2300, 2352, 3221, 1542, 1832, 1535, 1544, 2101, 859, 122, 49];
+                  for (var i = 0; i < 12; i++) {
+                    document.write("<td>"+gan[i]+"</td>");
+                    }
+                </script>
+              </tr>
+
+            </table>
+
+          </div>
+
+        </div>
+
+
+      </div>
+
+  <link rel="stylesheet" href="/csstabla/estilostabla.css">
+  </body>
+</html>
